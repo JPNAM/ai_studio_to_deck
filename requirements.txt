@@ -2,3 +2,11 @@ fastapi
 uvicorn[standard]
 python-dotenv
 httpx
+playwright
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+pydantic
+requests
+PyYAML

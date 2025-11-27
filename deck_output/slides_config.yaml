@@ -1,0 +1,6 @@
+base_path: "/"
+slides:
+  - id: "high_level_financial_summary"
+    path: "/?step=5"
+  - id: "growth_strategy"
+    path: "/?step=6"

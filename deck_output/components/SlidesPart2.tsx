@@ -4,16 +4,16 @@ import { Zap, Scissors, CreditCard, TowerControl, Flower, Users, ArrowRight, Plu
 // --- SLIDE 5: HIGH LEVEL FINANCIAL SUMMARY ---
 export const Slide5: React.FC = () => {
   return (
-    <div className="h-full flex flex-col justify-center px-4">
+      <div className="h-full flex flex-col justify-center px-4" data-slide-element="card" data-role="financial-summary">
       {/* Flow Container */}
       <div className="flex items-stretch justify-between gap-4 h-[420px]">
         
         {/* Step 1: The Reset */}
-        <div className="flex-1 bg-white rounded-lg shadow-sm border-t-[6px] border-[#2E7D32] p-6 flex flex-col relative group hover:-translate-y-1 transition-transform duration-300">
+          <div className="flex-1 bg-white rounded-lg shadow-sm border-t-[6px] border-[#2E7D32] p-6 flex flex-col relative group hover:-translate-y-1 transition-transform duration-300" data-slide-element="card" data-role="lever-reset">
           <div className="absolute top-4 right-4 text-gray-100 group-hover:text-green-50 transition-colors"><Scissors size={48} /></div>
-          <div className="text-xs font-bold text-[#2E7D32] uppercase tracking-wider mb-2">Lever 1</div>
-          <h3 className="text-[#0B1F3F] font-heading font-bold text-2xl mb-2">The Reset</h3>
-          <p className="text-gray-500 text-sm mb-6 leading-relaxed">Aligning cost base with reality by halving the Salary Cap.</p>
+            <div className="text-xs font-bold text-[#2E7D32] uppercase tracking-wider mb-2" data-slide-element="subtitle" data-role="lever-label">Lever 1</div>
+            <h3 className="text-[#0B1F3F] font-heading font-bold text-2xl mb-2" data-slide-element="heading" data-role="lever-title">The Reset</h3>
+            <p className="text-gray-500 text-sm mb-6 leading-relaxed" data-slide-element="body" data-role="lever-body">Aligning cost base with reality by halving the Salary Cap.</p>
           
           <div className="mt-auto space-y-4">
             <div className="flex justify-between text-xs font-bold text-gray-400 uppercase">
@@ -25,15 +25,15 @@ export const Slide5: React.FC = () => {
                 <span>£3.2m</span>
             </div>
             
-            <div className="bg-green-50 p-4 rounded text-center border border-green-100">
-                <div className="text-4xl font-extrabold text-[#2E7D32]">£32.0m</div>
-                <div className="text-[10px] font-bold text-[#2E7D32] uppercase tracking-wider mt-1">Aggregate Saving</div>
+              <div className="bg-green-50 p-4 rounded text-center border border-green-100" data-slide-element="card" data-role="kpi-card">
+                  <div className="text-4xl font-extrabold text-[#2E7D32]" data-slide-element="metric" data-role="kpi-value">£32.0m</div>
+                  <div className="text-[10px] font-bold text-[#2E7D32] uppercase tracking-wider mt-1" data-slide-element="subtitle" data-role="kpi-label">Aggregate Saving</div>
             </div>
           </div>
         </div>
 
         {/* Connector */}
-        <div className="flex flex-col justify-center items-center text-gray-300 gap-2">
+          <div className="flex flex-col justify-center items-center text-gray-300 gap-2" data-slide-element="icon" data-role="connector-plus">
             <div className="h-10 w-[2px] bg-gray-200"></div>
             <div className="bg-white rounded-full p-2 shadow-sm border border-gray-100">
                 <Plus size={20} className="text-gray-400" />
@@ -42,11 +42,11 @@ export const Slide5: React.FC = () => {
         </div>
 
         {/* Step 2: The Growth */}
-        <div className="flex-1 bg-white rounded-lg shadow-sm border-t-[6px] border-[#C5B358] p-6 flex flex-col relative group hover:-translate-y-1 transition-transform duration-300">
+          <div className="flex-1 bg-white rounded-lg shadow-sm border-t-[6px] border-[#C5B358] p-6 flex flex-col relative group hover:-translate-y-1 transition-transform duration-300" data-slide-element="card" data-role="lever-growth">
           <div className="absolute top-4 right-4 text-gray-100 group-hover:text-yellow-50 transition-colors"><Zap size={48} /></div>
-          <div className="text-xs font-bold text-[#C5B358] uppercase tracking-wider mb-2">Lever 2</div>
-          <h3 className="text-[#0B1F3F] font-heading font-bold text-2xl mb-2">The Growth</h3>
-          <p className="text-gray-500 text-sm mb-6 leading-relaxed">Launching 'Origin' to capture "National Interest" revenue.</p>
+            <div className="text-xs font-bold text-[#C5B358] uppercase tracking-wider mb-2" data-slide-element="subtitle" data-role="lever-label">Lever 2</div>
+            <h3 className="text-[#0B1F3F] font-heading font-bold text-2xl mb-2" data-slide-element="heading" data-role="lever-title">The Growth</h3>
+            <p className="text-gray-500 text-sm mb-6 leading-relaxed" data-slide-element="body" data-role="lever-body">Launching 'Origin' to capture "National Interest" revenue.</p>
           
           <div className="mt-auto space-y-4">
             <div className="flex justify-between text-xs font-bold text-gray-400 uppercase">
@@ -58,51 +58,51 @@ export const Slide5: React.FC = () => {
                 <span>£19.1m</span>
             </div>
             
-            <div className="bg-yellow-50 p-4 rounded text-center border border-yellow-100">
-                <div className="text-4xl font-extrabold text-[#b3a14d]">£19.1m</div>
-                <div className="text-[10px] font-bold text-[#b3a14d] uppercase tracking-wider mt-1">New Injection</div>
+              <div className="bg-yellow-50 p-4 rounded text-center border border-yellow-100" data-slide-element="card" data-role="kpi-card">
+                  <div className="text-4xl font-extrabold text-[#b3a14d]" data-slide-element="metric" data-role="kpi-value">£19.1m</div>
+                  <div className="text-[10px] font-bold text-[#b3a14d] uppercase tracking-wider mt-1" data-slide-element="subtitle" data-role="kpi-label">New Injection</div>
             </div>
           </div>
         </div>
 
          {/* Connector */}
-        <div className="flex flex-col justify-center items-center text-[#0B1F3F] gap-2">
+          <div className="flex flex-col justify-center items-center text-[#0B1F3F] gap-2" data-slide-element="icon" data-role="connector-arrow">
             <ArrowRight size={32} />
         </div>
 
         {/* Step 3: The Result (Hero) */}
-        <div className="flex-[1.3] bg-[#0B1F3F] text-white rounded-lg shadow-2xl p-8 flex flex-col relative overflow-hidden ring-1 ring-white/10">
+          <div className="flex-[1.3] bg-[#0B1F3F] text-white rounded-lg shadow-2xl p-8 flex flex-col relative overflow-hidden ring-1 ring-white/10" data-slide-element="card" data-role="net-position">
             <div className="absolute -top-10 -right-10 p-8 opacity-[0.05] text-white"><CreditCard size={250} /></div>
             
             <div className="relative z-10 border-b border-white/10 pb-4 mb-6">
-                <h3 className="text-[#C5B358] font-heading font-bold text-2xl uppercase tracking-widest">
-                    PRL Net Position
-                </h3>
-                <p className="text-gray-400 text-xs mt-1 uppercase tracking-wide">Annual Financial Impact</p>
+                  <h3 className="text-[#C5B358] font-heading font-bold text-2xl uppercase tracking-widest" data-slide-element="heading" data-role="net-position-heading">
+                      PRL Net Position
+                  </h3>
+                  <p className="text-gray-400 text-xs mt-1 uppercase tracking-wide" data-slide-element="subtitle" data-role="net-position-subtitle">Annual Financial Impact</p>
             </div>
             
             <div className="space-y-4 mb-8 text-sm relative z-10 flex-grow">
                 <div className="flex justify-between items-center group">
-                    <span className="text-gray-400 group-hover:text-white transition-colors">Operational Savings</span>
-                    <span className="font-bold text-lg">£32.0m</span>
+                      <span className="text-gray-400 group-hover:text-white transition-colors" data-slide-element="body" data-role="net-row-label">Operational Savings</span>
+                      <span className="font-bold text-lg" data-slide-element="metric" data-role="net-row-value">£32.0m</span>
                 </div>
                 <div className="flex justify-between items-center group">
-                    <span className="text-gray-400 group-hover:text-white transition-colors">Origin Income (PRL Share)</span>
-                    <span className="font-bold text-lg text-[#C5B358]">£19.1m</span>
+                      <span className="text-gray-400 group-hover:text-white transition-colors" data-slide-element="body" data-role="net-row-label">Origin Income (PRL Share)</span>
+                      <span className="font-bold text-lg text-[#C5B358]" data-slide-element="metric" data-role="net-row-value">£19.1m</span>
                 </div>
                 <div className="flex justify-between items-center pt-2 border-t border-white/5 group">
-                    <span className="text-gray-500 text-xs uppercase">Less: Lost Cup Revenue</span>
-                    <span className="font-bold text-red-400">(£4.0m)</span>
+                      <span className="text-gray-500 text-xs uppercase" data-slide-element="body" data-role="net-row-label">Less: Lost Cup Revenue</span>
+                      <span className="font-bold text-red-400" data-slide-element="metric" data-role="net-row-value">(£4.0m)</span>
                 </div>
             </div>
 
             <div className="mt-auto bg-white/5 p-6 rounded-lg backdrop-blur-md border border-white/10 text-center relative z-10">
-                <div className="text-6xl font-heading font-extrabold text-white mb-2 tracking-tight">£47.1m</div>
-                <div className="text-xs font-bold text-[#C5B358] uppercase tracking-[0.2em] mb-6">Total Net Improvement</div>
+                  <div className="text-6xl font-heading font-extrabold text-white mb-2 tracking-tight" data-slide-element="metric" data-role="net-total">£47.1m</div>
+                  <div className="text-xs font-bold text-[#C5B358] uppercase tracking-[0.2em] mb-6" data-slide-element="subtitle" data-role="net-total-label">Total Net Improvement</div>
                 
                 <div className="inline-flex items-center gap-3 bg-[#C5B358] text-[#0B1F3F] px-6 py-3 rounded shadow-[0_10px_20px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform">
-                    <span className="text-xl font-extrabold">+£4.7m</span>
-                    <span className="text-xs font-bold uppercase border-l border-[#0B1F3F]/20 pl-3">Per Club / Year</span>
+                      <span className="text-xl font-extrabold" data-slide-element="metric" data-role="per-club">+£4.7m</span>
+                      <span className="text-xs font-bold uppercase border-l border-[#0B1F3F]/20 pl-3" data-slide-element="subtitle" data-role="per-club-label">Per Club / Year</span>
                 </div>
             </div>
         </div>
@@ -124,16 +124,16 @@ export const Slide5: React.FC = () => {
 // --- SLIDE 6: "CREATING A MIDDLE CLASS" ---
 export const Slide6: React.FC = () => {
   return (
-    <div className="h-full w-full flex gap-4 overflow-hidden relative">
+      <div className="h-full w-full flex gap-4 overflow-hidden relative" data-slide-element="card" data-role="middle-class-overview">
         
         {/* --- LEFT COLUMN: MEN'S GAME --- */}
-        <div className="flex-1 flex flex-col bg-white/50 rounded-lg p-4 border border-gray-100">
+          <div className="flex-1 flex flex-col bg-white/50 rounded-lg p-4 border border-gray-100" data-slide-element="card" data-role="mens-game">
             <div className="mb-2 border-b border-gray-200 pb-2 flex justify-between items-end">
                 <div>
-                    <h3 className="text-[#0B1F3F] font-heading font-bold text-lg uppercase">Men's Game</h3>
-                    <p className="text-gray-500 text-[10px]">Impact on annual earnings</p>
+                      <h3 className="text-[#0B1F3F] font-heading font-bold text-lg uppercase" data-slide-element="heading" data-role="mens-heading">Men's Game</h3>
+                      <p className="text-gray-500 text-[10px]" data-slide-element="subtitle" data-role="mens-subtitle">Impact on annual earnings</p>
                 </div>
-                <div className="flex gap-3 text-[10px] font-bold uppercase">
+                  <div className="flex gap-3 text-[10px] font-bold uppercase" data-slide-element="subtitle" data-role="legend">
                      <div className="flex items-center gap-1.5"><div className="w-3 h-3 bg-gray-300 rounded-sm"></div> Current</div>
                      <div className="flex items-center gap-1.5"><div className="w-3 h-3 bg-[#0B1F3F] rounded-sm"></div> New System</div>
                 </div>

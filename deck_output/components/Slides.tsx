@@ -4,43 +4,43 @@ import { User, Shield, Crown, Waves, Gavel, Castle, Clock, ArrowRight, Mars, Ven
 
 // --- SLIDE 1 ---
 export const Slide1: React.FC = () => {
-  return (
-    <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 h-full items-start">
-      <div className="flex flex-col gap-6 pt-2">
-        <div className="pl-5 border-l-4 border-[#0B1F3F]">
-          <h3 className="text-xl font-heading font-bold text-[#0B1F3F] mb-2">The Connection is to "England"</h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Revenue in rugby union is driven by the national team. New fans engage with the <strong>England</strong> brand.
-          </p>
-        </div>
-        <div className="pl-5 border-l-4 border-[#C8102E]">
-          <h3 className="text-xl font-heading font-bold text-[#C8102E] mb-2">The Story Breaks When the Window Ends</h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            When the international window closes, the audience evaporates. Fans do not migrate to the Premiership because the "Test" connection is severed.
-          </p>
-        </div>
-        <div className="pl-5 border-l-4 border-[#0B1F3F]">
-          <h3 className="text-xl font-heading font-bold text-[#0B1F3F] mb-2">The Economic Consequence</h3>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Clubs are left paying Test-level wages to produce England players, without capturing the Test-level revenue to fund them.
-          </p>
-        </div>
-        <div className="bg-[#0B1F3F] text-white p-6 rounded-lg shadow-xl relative mt-4 border border-white/10">
-          <div className="absolute -top-3 left-5 bg-[#C5B358] text-[#0B1F3F] text-xs font-extrabold px-3 py-1 rounded tracking-wider">
-            THE THESIS
+    return (
+      <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 h-full items-start">
+        <div className="flex flex-col gap-6 pt-2">
+          <div className="pl-5 border-l-4 border-[#0B1F3F]" data-slide-element="card" data-role="insight">
+            <h3 className="text-xl font-heading font-bold text-[#0B1F3F] mb-2" data-slide-element="heading" data-role="slide-heading">The Connection is to "England"</h3>
+            <p className="text-gray-600 text-lg leading-relaxed" data-slide-element="body" data-role="insight-body">
+              Revenue in rugby union is driven by the national team. New fans engage with the <strong>England</strong> brand.
+            </p>
           </div>
-          <p className="text-lg leading-relaxed">
-            Don't fight the current. Start where demand is strongest—<strong>England</strong>—and build <em className="text-[#C5B358] not-italic font-bold">down</em> into a divisional "Origin" product.
-          </p>
+          <div className="pl-5 border-l-4 border-[#C8102E]" data-slide-element="card" data-role="insight">
+            <h3 className="text-xl font-heading font-bold text-[#C8102E] mb-2" data-slide-element="heading" data-role="slide-subheading">The Story Breaks When the Window Ends</h3>
+            <p className="text-gray-600 text-lg leading-relaxed" data-slide-element="body" data-role="insight-body">
+              When the international window closes, the audience evaporates. Fans do not migrate to the Premiership because the "Test" connection is severed.
+            </p>
+          </div>
+          <div className="pl-5 border-l-4 border-[#0B1F3F]" data-slide-element="card" data-role="insight">
+            <h3 className="text-xl font-heading font-bold text-[#0B1F3F] mb-2" data-slide-element="heading" data-role="slide-subheading">The Economic Consequence</h3>
+            <p className="text-gray-600 text-lg leading-relaxed" data-slide-element="body" data-role="insight-body">
+              Clubs are left paying Test-level wages to produce England players, without capturing the Test-level revenue to fund them.
+            </p>
+          </div>
+          <div className="bg-[#0B1F3F] text-white p-6 rounded-lg shadow-xl relative mt-4 border border-white/10" data-slide-element="card" data-role="thesis">
+            <div className="absolute -top-3 left-5 bg-[#C5B358] text-[#0B1F3F] text-xs font-extrabold px-3 py-1 rounded tracking-wider" data-slide-element="subtitle" data-role="card-label">
+              THE THESIS
+            </div>
+            <p className="text-lg leading-relaxed" data-slide-element="body" data-role="thesis-body">
+              Don't fight the current. Start where demand is strongest—<strong>England</strong>—and build <em className="text-[#C5B358] not-italic font-bold">down</em> into a divisional "Origin" product.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col justify-center h-full pl-4">
-        <div className="bg-white rounded-lg p-6 shadow-lg border-t-8 border-[#D32F2F]">
-          <div className="font-bold text-lg text-[#D32F2F] mb-6 text-center uppercase tracking-wide">
-            Clubs Spend £2 for Every £1 of Media Revenue
-          </div>
-          <table className="w-full border-separate border-spacing-y-2">
+        <div className="flex flex-col justify-center h-full pl-4">
+          <div className="bg-white rounded-lg p-6 shadow-lg border-t-8 border-[#D32F2F]" data-slide-element="card" data-role="comparison-table">
+            <div className="font-bold text-lg text-[#D32F2F] mb-6 text-center uppercase tracking-wide" data-slide-element="heading" data-role="table-heading">
+              Clubs Spend £2 for Every £1 of Media Revenue
+            </div>
+            <table className="w-full border-separate border-spacing-y-2" data-slide-element="card" data-role="table-body">
             <thead>
               <tr>
                 <th className="text-left text-xs font-semibold text-gray-400 uppercase pb-2 border-b border-gray-200">Property</th>
@@ -48,10 +48,10 @@ export const Slide1: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-red-50 relative">
-                <td className="p-3 font-bold text-[#C8102E] border-l-4 border-[#D32F2F]">PREM (Rugby Union)</td>
-                <td className="p-3 text-right font-extrabold text-[#C8102E] text-xl border-r-4 border-[#D32F2F]">203%</td>
-              </tr>
+                <tr className="bg-red-50 relative">
+                  <td className="p-3 font-bold text-[#C8102E] border-l-4 border-[#D32F2F]" data-slide-element="body" data-role="table-row">PREM (Rugby Union)</td>
+                  <td className="p-3 text-right font-extrabold text-[#C8102E] text-xl border-r-4 border-[#D32F2F]" data-slide-element="metric" data-role="kpi">203%</td>
+                </tr>
               {[
                 ['NHL (Ice Hockey)', '122%'],
                 ['Premier League (Football)', '115%'],
@@ -61,8 +61,8 @@ export const Slide1: React.FC = () => {
                 ['AFL (Australian Rules)', '50%']
               ].map(([league, val]) => (
                 <tr key={league} className="border-b border-gray-100">
-                  <td className="p-3 text-sm font-semibold text-[#0B1F3F] bg-white border-b border-gray-100">{league}</td>
-                  <td className="p-3 text-right text-sm font-bold text-gray-700 bg-white border-b border-gray-100">{val}</td>
+                  <td className="p-3 text-sm font-semibold text-[#0B1F3F] bg-white border-b border-gray-100" data-slide-element="body" data-role="table-row">{league}</td>
+                  <td className="p-3 text-right text-sm font-bold text-gray-700 bg-white border-b border-gray-100" data-slide-element="metric" data-role="kpi">{val}</td>
                 </tr>
               ))}
             </tbody>
@@ -90,43 +90,43 @@ export const Slide2: React.FC = () => {
     </div>
   );
 
-  return (
-    <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 h-full items-center">
-      <div className="pr-8">
-        <h2 className="text-4xl font-heading font-bold text-[#0B1F3F] leading-tight mb-8">
-          Identity Defined by Roots,<br />Not Contracts.
-        </h2>
-        
-        <div className="mb-6 pl-5 border-l-4 border-[#0B1F3F]">
-          <h3 className="text-lg font-bold text-[#0B1F3F] mb-1">Eligibility</h3>
-          <p className="text-gray-600 leading-relaxed">
-            The club you play for is irrelevant. Eligibility is defined solely by your <strong>Birthplace</strong>, <strong>School</strong> (Age 16), or <strong>Junior Club</strong>.
-          </p>
-        </div>
-        
-        <div className="mb-6 pl-5 border-l-4 border-[#0B1F3F]">
-          <h3 className="text-lg font-bold text-[#0B1F3F] mb-1">The 4 Historic Divisions</h3>
-          <p className="text-gray-600 leading-relaxed">
-            We are reviving the historic playing divisions of the RFU. This creates authentic, tribal rivalries that commercial franchises cannot replicate.
-          </p>
+    return (
+      <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] gap-12 h-full items-center">
+        <div className="pr-8">
+          <h2 className="text-4xl font-heading font-bold text-[#0B1F3F] leading-tight mb-8" data-slide-element="heading" data-role="slide-heading">
+            Identity Defined by Roots,<br />Not Contracts.
+          </h2>
+
+          <div className="mb-6 pl-5 border-l-4 border-[#0B1F3F]" data-slide-element="card" data-role="eligibility">
+            <h3 className="text-lg font-bold text-[#0B1F3F] mb-1" data-slide-element="heading" data-role="card-title">Eligibility</h3>
+            <p className="text-gray-600 leading-relaxed" data-slide-element="body" data-role="card-body">
+              The club you play for is irrelevant. Eligibility is defined solely by your <strong>Birthplace</strong>, <strong>School</strong> (Age 16), or <strong>Junior Club</strong>.
+            </p>
+          </div>
+
+          <div className="mb-6 pl-5 border-l-4 border-[#0B1F3F]" data-slide-element="card" data-role="divisions">
+            <h3 className="text-lg font-bold text-[#0B1F3F] mb-1" data-slide-element="heading" data-role="card-title">The 4 Historic Divisions</h3>
+            <p className="text-gray-600 leading-relaxed" data-slide-element="body" data-role="card-body">
+              We are reviving the historic playing divisions of the RFU. This creates authentic, tribal rivalries that commercial franchises cannot replicate.
+            </p>
+          </div>
+
+          <div className="mb-6 pl-5 border-l-4 border-[#C8102E]" data-slide-element="card" data-role="affinity">
+            <h3 className="text-lg font-bold text-[#C8102E] mb-1" data-slide-element="heading" data-role="card-title">Instant Affinity</h3>
+            <p className="text-gray-600 leading-relaxed" data-slide-element="body" data-role="card-body">
+              These identities are pre-loaded. Old fans recognize the heritage; new fans instinctively understand the geography. You don't need to "explain" why the North hates the South.
+            </p>
+          </div>
         </div>
 
-        <div className="mb-6 pl-5 border-l-4 border-[#C8102E]">
-          <h3 className="text-lg font-bold text-[#C8102E] mb-1">Instant Affinity</h3>
-          <p className="text-gray-600 leading-relaxed">
-            These identities are pre-loaded. Old fans recognize the heritage; new fans instinctively understand the geography. You don't need to "explain" why the North hates the South.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col">
-        <div className="bg-gray-200 px-4 py-2 rounded-t font-bold text-gray-600 text-xs uppercase self-start mb-2">
-          Example Squad Lists (Eligibility by Roots)
-        </div>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col">
+          <div className="bg-gray-200 px-4 py-2 rounded-t font-bold text-gray-600 text-xs uppercase self-start mb-2" data-slide-element="subtitle" data-role="squad-label">
+            Example Squad Lists (Eligibility by Roots)
+          </div>
+          <div className="grid grid-cols-2 gap-4" data-slide-element="card" data-role="squad-grid">
           {[
-            { 
-              region: 'NORTH', 
+            {
+              region: 'NORTH',
               color: THEME.navy, 
               icon: <Castle size={14} className="opacity-30" />, 
               players: [
@@ -162,13 +162,18 @@ export const Slide2: React.FC = () => {
               ] 
             }
           ].map((card, idx) => (
-            <div key={idx} className="bg-white border rounded-lg p-4 shadow-sm relative overflow-hidden flex flex-col">
+            <div
+              key={idx}
+              className="bg-white border rounded-lg p-4 shadow-sm relative overflow-hidden flex flex-col"
+              data-slide-element="card"
+              data-role={`region-card-${card.region.toLowerCase().replace(/\s+/g, '-')}`}
+            >
               <div className="absolute top-0 left-0 w-1.5 h-full" style={{ backgroundColor: card.color }}></div>
-              <div className="flex justify-between items-center border-b border-gray-100 pb-2 mb-2">
+              <div className="flex justify-between items-center border-b border-gray-100 pb-2 mb-2" data-slide-element="heading" data-role="region-heading">
                 <span className="font-extrabold text-[#0B1F3F] uppercase text-sm" style={{ color: card.color === THEME.accentGold ? '#998a30' : card.color }}>{card.region}</span>
                 {card.icon}
               </div>
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1" data-slide-element="body" data-role="player-list">
                 {card.players.map((p, pIdx) => (
                   <PlayerRow key={pIdx} name={p.n} origin={p.o} gender={p.g as 'm' | 'f'} />
                 ))}
@@ -183,19 +188,24 @@ export const Slide2: React.FC = () => {
 
 // --- SLIDE 3 ---
 export const Slide3: React.FC = () => {
-  const RegionCard = ({ 
-    title, subtitle, desc, icon, history, color 
+  const RegionCard = ({
+    title, subtitle, desc, icon, history, color
   }: { title: string, subtitle: string, desc: string, icon: React.ReactNode, history: {match: string, context: string}[], color: string }) => (
-    <div className="bg-white border-l-[6px] p-5 rounded-sm shadow-sm flex flex-col relative overflow-hidden" style={{ borderColor: color }}>
-      <div className="flex items-center gap-2 mb-1">
+    <div
+      className="bg-white border-l-[6px] p-5 rounded-sm shadow-sm flex flex-col relative overflow-hidden"
+      style={{ borderColor: color }}
+      data-slide-element="card"
+      data-role={`region-detail-${title.toLowerCase().replace(/\s+/g, '-')}`}
+    >
+      <div className="flex items-center gap-2 mb-1" data-slide-element="heading" data-role="region-title">
         <span style={{ color: color }}>{icon}</span>
         <h3 className="font-bold text-xl uppercase text-[#0B1F3F]">{title}</h3>
       </div>
-      <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">{subtitle}</div>
-      <p className="text-[15px] font-medium text-[#0B1F3F] leading-snug mb-5 flex-grow">
+      <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3" data-slide-element="subtitle" data-role="region-subtitle">{subtitle}</div>
+      <p className="text-[15px] font-medium text-[#0B1F3F] leading-snug mb-5 flex-grow" data-slide-element="body" data-role="region-description">
         {desc}
       </p>
-      <div className="bg-[#f4f6f8] p-3 rounded mt-auto">
+      <div className="bg-[#f4f6f8] p-3 rounded mt-auto" data-slide-element="card" data-role="region-history">
         <div className="flex items-center gap-2 text-[11px] font-extrabold text-gray-500 uppercase border-b border-gray-200 pb-1 mb-2">
           <Clock size={10} /> Historic Fixtures
         </div>
@@ -264,9 +274,14 @@ export const Slide3: React.FC = () => {
 // --- SLIDE 4 ---
 export const Slide4: React.FC = () => {
   const PhaseCard = ({ title, desc, highlight = false }: { title: string, desc: string, highlight?: boolean }) => (
-    <div className={`p-3 rounded-md border-l-4 flex flex-col justify-center ${highlight ? 'bg-[#0B1F3F] text-white' : 'bg-[#0B1F3F] text-white'}`} style={{ borderColor: highlight ? THEME.englandRed : THEME.accentGold }}>
-      <div className={`text-[11px] font-bold uppercase mb-1 ${highlight ? 'text-white' : 'text-[#C5B358]'}`}>{title}</div>
-      <div className="text-[11px] leading-tight opacity-90">{desc}</div>
+    <div
+      className={`p-3 rounded-md border-l-4 flex flex-col justify-center ${highlight ? 'bg-[#0B1F3F] text-white' : 'bg-[#0B1F3F] text-white'}`}
+      style={{ borderColor: highlight ? THEME.englandRed : THEME.accentGold }}
+      data-slide-element="card"
+      data-role={highlight ? 'phase-highlight' : 'phase-card'}
+    >
+      <div className={`text-[11px] font-bold uppercase mb-1 ${highlight ? 'text-white' : 'text-[#C5B358]'}`} data-slide-element="heading" data-role="phase-title">{title}</div>
+      <div className="text-[11px] leading-tight opacity-90" data-slide-element="body" data-role="phase-description">{desc}</div>
     </div>
   );
 
@@ -291,9 +306,11 @@ export const Slide4: React.FC = () => {
   );
 
   const Block = ({ start, span, color, text, border = false }: { start: number, span: number, color: string, text: string, border?: boolean }) => (
-    <div 
+    <div
       className={`h-full flex items-center justify-center text-white font-bold text-[9px] rounded-sm z-10 ${border ? 'border border-black' : ''}`}
       style={{ gridColumn: `${start} / span ${span}`, backgroundColor: color }}
+      data-slide-element="card"
+      data-role="calendar-block"
     >
       {text}
     </div>
